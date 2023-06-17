@@ -1,0 +1,153 @@
+nav {
+    background-color: #f2f2f2;
+    }
+
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav ul li {
+    display: inline;
+    }
+
+    nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    }
+
+    nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.poll-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .poll-list li {
+    margin-bottom: 10px;
+  }
+  
+  .poll-list li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .poll-list li a:hover {
+    color: #555;
+    text-decoration: underline;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .poll-details {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .already-voted-message {
+    color: blue;
+  }
+  
+  .poll-options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .poll-option {
+    margin-bottom: 10px;
+  }
+  
+  .poll-option input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .vote-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .vote-button:hover {
+    background-color: #45a049;
+  }
+
+  .poll-result {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .result-bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .choice-text {
+    margin-bottom: 10px;
+  }
+  
+  .total-votes {
+    font-weight: bold;
+  }
+  
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

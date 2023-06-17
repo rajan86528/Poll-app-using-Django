@@ -1,0 +1,33 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+
+
+<h1>Create Poll</h1>
+
+<form id="create-poll-form" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <div id="options-container">
+    <div class="option-input">
+      <input type="text" name="choice_texts[]" placeholder="Enter Option" required>
+    </div>
+  </div><br>
+  <button type="button" id="add-option-button">Add More Option</button><br><br>
+  <button type="submit">Create</button>
+</form>
+
+<script>
+  const addOptionButton = document.getElementById('add-option-button');
+  const optionsContainer = document.getElementById('options-container');
+
+  addOptionButton.addEventListener('click', function () {
+    const optionInput = document.createElement('div');
+    optionInput.classList.add('option-input');
+    optionInput.innerHTML = '<input type="text" name="choice_texts[]" placeholder="Option" required>';
+    optionsContainer.appendChild(optionInput);
+  });
+</script>
+
+
+{% endblock %}

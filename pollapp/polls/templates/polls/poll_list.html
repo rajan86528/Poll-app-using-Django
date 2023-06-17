@@ -1,0 +1,22 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+
+<h1>List of Polls</h1>
+<center><p>To create Poll You must Be Login/CreateAccount</p></center>
+<hr>
+{% for poll in polls %}
+  <h2>{{ poll.question }}</h2>
+  <ul>
+    {% for choice in poll.choice_set.all %}
+      <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'polls:detail' poll_id=poll.id %}">Vote</a>
+  <hr>
+{% endfor %}
+
+
+
+
+{% endblock %}
