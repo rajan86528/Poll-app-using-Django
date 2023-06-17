@@ -1,5 +1,5 @@
 # Poll-app-using-Django
-download file
+download file <br>
 extract the file
 create virtual env 
 pip install -r requirements.txt
